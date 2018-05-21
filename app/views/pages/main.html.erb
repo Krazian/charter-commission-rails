@@ -1,0 +1,68 @@
+<%= render partial: "header-banner" %>
+  <div class="row">
+    <div id="banner" class="col-12">
+      <nav class="navbar navbar-expand-sm">
+        <button id="hamburger-toggler" class="navbar-toggler"  onclick="iconChange(this)" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span id="hamburger-text">Menu</span>
+          <span id="hamburger" class="navbar-toggler-icon">
+            <div class="bars bar1"></div>
+            <div class="bars bar2"></div>
+            <div class="bars bar3"></div>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link disabled">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About
+              </a>
+              <div class="nav-item dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="nav-link dropdown-item" href="charter">About the Charter</a>
+                <div class="dropdown-divider"></div>
+                <a class="nav-link dropdown-item" href="jobs">Jobs</a>
+                <div class="dropdown-divider"></div>
+                <a class="nav-link dropdown-item" href="members">Commissions Members</a>
+                <div class="dropdown-divider"></div>
+                <a class="nav-link dropdown-item" href="staff">Staff</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact">Contact the Commission</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="contactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Hearings</span>
+              </a>
+              <div class="nav-item dropdown-menu" aria-labelledby="contactDropdown">
+                <a class="nav-link dropdown-item" href="upcoming">Upcoming</a>
+                <div class="dropdown-divider"></div>
+                <a class="nav-link dropdown-item" href="archived">Archived</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reports">Reports</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div id="home-image"></div>
+      </div>
+      <div class="col-12">
+        <p style="text-indent:25px;">The New York City Charter creates the framework for City government, it is our constitution. The Charter controls how the City spends your tax dollars, how decisions are made about changes to your neighborhood, and the powers of your elected officials. Nearly thirty years ago, a Charter Revision Commission overhauled the City’s government after a top-to-bottom review with an eye towards real reform. It’s time for a fresh look.</p>
+        <p style="text-indent:25px;">The Commission—made up of Members appointed by the Mayor, the Speaker of the City Council, all five Borough Presidents, the Public Advocate, and the Comptroller—is charged with looking at the whole picture and bringing its recommendations to the people at the November 2019 general election. </p>
+      </div>
+    </div>
+  </div>
+
+  <%= render partial: "footer" %>

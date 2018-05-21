@@ -1,0 +1,65 @@
+<%= render partial: "header-banner" %>
+
+  <div class="row">
+    <div id="banner" class="col-12">
+      <nav class="navbar navbar-expand-sm">
+        <button id="hamburger-toggler" class="navbar-toggler"  onclick="iconChange(this)" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span id="hamburger-text">Menu</span>
+          <span id="hamburger" class="navbar-toggler-icon">
+            <div class="bars bar1"></div>
+            <div class="bars bar2"></div>
+            <div class="bars bar3"></div>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item active active-pointer dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About
+              </a>
+              <div class="nav-item dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="nav-link dropdown-item disabled active-dropdown">About the Charter<span class="sr-only">(current)</span></a>
+                <div class="dropdown-divider"></div>
+                <a class="nav-link dropdown-item" href="jobs">Jobs</a>
+                <div class="dropdown-divider"></div>
+                <a class="nav-link dropdown-item" href="members">Commission Members</a>
+                <div class="dropdown-divider"></div>
+                <a class="nav-link dropdown-item" href="staff">Staff</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact">Contact the Commission</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="contactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Hearings</span>
+              </a>
+              <div class="nav-item dropdown-menu" aria-labelledby="contactDropdown">
+                <a class="nav-link dropdown-item" href="upcoming">Upcoming</a>
+                <div class="dropdown-divider"></div>
+                <a class="nav-link dropdown-item" href="archived">Archived</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reports">Reports</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p>Spicy jalapeno bacon ipsum dolor amet swine chuck alcatra flank nostrud. Mollit culpa frankfurter dolore. Kevin incididunt laboris aliquip short ribs doner biltong ea. Jowl porchetta minim cupim dolor. Pork chop aliqua labore ground round hamburger frankfurter quis alcatra swine in ipsum consequat bacon shoulder short ribs.</p>
+      </div>
+    </div>
+  </div>
+
+<%= render partial: "footer" %>

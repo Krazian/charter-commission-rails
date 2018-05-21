@@ -1,0 +1,103 @@
+<%= render partial: "header-banner" %>
+
+  <div class="row">
+    <div id="banner" class="col-12">
+      <nav class="navbar navbar-expand-sm">
+        <button id="hamburger-toggler" class="navbar-toggler"  onclick="iconChange(this)" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span id="hamburger-text">Menu</span>
+          <span id="hamburger" class="navbar-toggler-icon">
+            <div class="bars bar1"></div>
+            <div class="bars bar2"></div>
+            <div class="bars bar3"></div>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item active active-pointer dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About
+              </a>
+              <div class="nav-item dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="nav-link dropdown-item" href="charter">About the Charter</a>
+                <div class="dropdown-divider"></div>
+                <a class="nav-link dropdown-item" href="jobs">Jobs</a>
+                <div class="dropdown-divider"></div>
+                <a class="nav-link dropdown-item disabled active-dropdown" href="members">Commission Members <span class="sr-only">(current)</span></a>
+                <div class="dropdown-divider"></div>
+                <a class="nav-link dropdown-item" href="staff">Staff</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact">Contact the Commission</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="contactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Hearings</span>
+              </a>
+              <div class="nav-item dropdown-menu" aria-labelledby="contactDropdown">
+                <a class="nav-link dropdown-item" href="upcoming">Upcoming</a>
+                <div class="dropdown-divider"></div>
+                <a class="nav-link dropdown-item" href="archived">Archived</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reports">Reports</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p>The Commission includes Members appointed by a diverse array of elected officials representing all parts of City.</p>
+  
+          <p><a href="jobs">Learn more about the Commission Members, staff, and how to join the team.</a></p>
+          <!-- <h2>Commissioners</h2> photo and bio of 15 commissioners
+            <button type="button" class="btn btn-primary contact-modal-open" data-contact="0" data-toggle="modal" data-target="#commissionerModal">
+              Commissioner 1
+            </button>
+            <button type="button" class="btn btn-primary contact-modal-open" data-contact="1" data-toggle="modal" data-target="#commissionerModal">
+              Commissioner 2
+            </button>
+            <button type="button" class="btn btn-primary contact-modal-open" data-contact="2" data-toggle="modal" data-target="#commissionerModal">
+              Commissioner 3
+            </button>
+            <br><br>
+          <h2>Executive Director</h2> bio 
+          <br><br>
+          <h2>Staff</h2> list of names -->
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="commissionerModal" tabindex="-1" role="dialog" aria-labelledby="commissionerModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="commissioner-name"></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-4" id="commissioner-pic"></div>
+                <div class="col-8" id="commissioner-bio"></div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <%= render partial: "footer" %>
